@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../Images/giphy.gif);
+  background-size: contain;
+  background-position: 15rem center;
+  background-repeat: no-repeat;
+}
+.container .jokeDiv {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 3rem;
+  left: 34rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: rgb(187, 212, 235);
+  overflow: auto;
+}
+.container .container-content {
+  position: relative;
+}
+.container .container-content button {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  width: 20rem;
+  height: 3rem;
+  background-color: rgb(171, 208, 242);
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  main .container {
+    flex-direction: column;
+    background-position: center center;
+  }
+  main .container .jokeDiv {
+    width: 40%;
+    height: auto;
+    top: 10rem;
+    left: 1rem;
+  }
+  main .container .container-content {
+    position: absolute;
+    top: 2rem;
+  }
+  main .container .container-content button {
+    font-size: 1rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 600;
+    width: 15rem;
+  }
+}/*# sourceMappingURL=Main.css.map */
